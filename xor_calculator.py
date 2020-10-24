@@ -17,8 +17,10 @@ print("""
 sleep(2)
 message1 = input("Hello, please enter the first message: ")
 message2 = input("Enter the second message: ")
-# message1 = "1010101010101010101010101010101010"  # Insert Encoded message here
-# message2 = "44585d6b2368737c65252166234f20626d"  # Insert second encoded message here
+
+# Example: message1 = "1010101010101010101010101010101010"
+# Example: message2 = "44585d6b2368737c65252166234f20626d"
+# Output: a CTF flag
 
 a = hex(int(message1, 16) ^ int(message2, 16))[2:]
 output_msg = "The decoded XOR Message is: " + (bytes.fromhex(a).decode('utf-8'))
