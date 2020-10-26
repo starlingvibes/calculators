@@ -14,7 +14,6 @@ print("""
  \_______/      |__/  |__/ \______/ |__/  |__/      |_______/ 
                                                               """)
 
-sleep(2)
 message1 = input("Hello, please enter the first message: ")
 message2 = input("Enter the second message: ")
 
